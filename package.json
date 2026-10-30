@@ -51,6 +51,7 @@
     "dev": "vite",
     "build": "vite build -c vite.lib.config.ts && tsc -p tsconfig.lib.json",
     "build:demo": "tsc -b && vite build",
+    "demo": "reel-mesh record demo/gallery.yaml && reel-mesh render demo/gallery.yaml && cp .reel/gallery/gallery.gif docs/media/gallery.gif",
     "lint": "oxlint",
     "preview": "vite preview",
     "prepublishOnly": "npm run lint && tsc -b && npm run build"

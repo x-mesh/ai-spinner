@@ -1,7 +1,12 @@
 # @x-mesh/ai-spinner
 
+[![npm version](https://img.shields.io/npm/v/@x-mesh/ai-spinner)](https://www.npmjs.com/package/@x-mesh/ai-spinner)
+[![license](https://img.shields.io/npm/l/@x-mesh/ai-spinner)](LICENSE)
+
 Animated canvas spinners that show what an AI assistant does while the user waits.
 The package has 68 style sets. Each set has nine states, such as `searching`, `solving` and `composing`.
+
+![The gallery switches between the Galaxy, Knot, Flame and Jelly styles, each in nine animated states, then shows the code for the selected style](https://raw.githubusercontent.com/x-mesh/ai-spinner/main/docs/media/gallery.gif)
 
 See all sets and copy the code for your choice in the [gallery](https://x-mesh.github.io/ai-spinner/).
 
@@ -141,6 +146,7 @@ npm install
 npm run dev          # Gallery page at http://localhost:5173
 npm run build        # Library into dist/
 npm run build:demo   # Gallery page into dist-demo/
+npm run demo         # README GIF into docs/media/ (needs reel-mesh and the dev server)
 npm run lint
 ```
 

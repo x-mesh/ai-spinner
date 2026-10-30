@@ -1,0 +1,337 @@
+# Only non-wait steps capture a frame, and `wait` merely holds the last one. Each scene
+# therefore repeats its caption step, one frame per repeat, so the spinners keep moving.
+name: gallery
+caption:
+  lang: en
+  position: { page: bottom }
+screens:
+  - id: page
+    url: http://127.0.0.1:5173/
+    size: [1100, 760]
+timing:
+  # A caption step takes about 52 ms to capture; the 48 ms wait after it makes each
+  # frame cover the same 100 ms on screen as it did in the browser.
+  frameMs: 52
+steps:
+  - expect: { screen: page, selector: 'button[title="Matrix"][aria-pressed="true"]' }
+  - caption: "68 spinner styles for AI apps"
+  - wait: 48
+  - caption: "68 spinner styles for AI apps"
+  - wait: 48
+  - caption: "68 spinner styles for AI apps"
+  - wait: 48
+  - caption: "68 spinner styles for AI apps"
+  - wait: 48
+  - caption: "68 spinner styles for AI apps"
+  - wait: 48
+  - caption: "68 spinner styles for AI apps"
+  - wait: 48
+  - caption: "68 spinner styles for AI apps"
+  - wait: 48
+  - caption: "68 spinner styles for AI apps"
+  - wait: 48
+  - caption: "68 spinner styles for AI apps"
+  - wait: 48
+  - caption: "68 spinner styles for AI apps"
+  - wait: 48
+  - caption: "68 spinner styles for AI apps"
+  - wait: 48
+  - caption: "68 spinner styles for AI apps"
+  - wait: 48
+  - caption: "68 spinner styles for AI apps"
+  - wait: 48
+  - caption: "68 spinner styles for AI apps"
+  - wait: 48
+  - caption: "68 spinner styles for AI apps"
+  - wait: 48
+  - caption: "68 spinner styles for AI apps"
+  - wait: 48
+  - caption: "68 spinner styles for AI apps"
+  - wait: 48
+  - caption: "68 spinner styles for AI apps"
+  - wait: 48
+  - caption: "68 spinner styles for AI apps"
+  - wait: 48
+  - caption: "68 spinner styles for AI apps"
+  - wait: 48
+  - caption: "68 spinner styles for AI apps"
+  - wait: 48
+  - caption: "68 spinner styles for AI apps"
+  - wait: 48
+  - script: gallery.mjs
+  - caption: "Each style has nine states, one per AI activity"
+  - wait: 48
+  - caption: "Each style has nine states, one per AI activity"
+  - wait: 48
+  - caption: "Each style has nine states, one per AI activity"
+  - wait: 48
+  - caption: "Each style has nine states, one per AI activity"
+  - wait: 48
+  - caption: "Each style has nine states, one per AI activity"
+  - wait: 48
+  - caption: "Each style has nine states, one per AI activity"
+  - wait: 48
+  - caption: "Each style has nine states, one per AI activity"
+  - wait: 48
+  - caption: "Each style has nine states, one per AI activity"
+  - wait: 48
+  - caption: "Each style has nine states, one per AI activity"
+  - wait: 48
+  - caption: "Each style has nine states, one per AI activity"
+  - wait: 48
+  - caption: "Each style has nine states, one per AI activity"
+  - wait: 48
+  - caption: "Each style has nine states, one per AI activity"
+  - wait: 48
+  - caption: "Each style has nine states, one per AI activity"
+  - wait: 48
+  - caption: "Each style has nine states, one per AI activity"
+  - wait: 48
+  - caption: "Each style has nine states, one per AI activity"
+  - wait: 48
+  - caption: "Each style has nine states, one per AI activity"
+  - wait: 48
+  - caption: "Each style has nine states, one per AI activity"
+  - wait: 48
+  - caption: "Each style has nine states, one per AI activity"
+  - wait: 48
+  - caption: "Each style has nine states, one per AI activity"
+  - wait: 48
+  - caption: "Each style has nine states, one per AI activity"
+  - wait: 48
+  - caption: "Each style has nine states, one per AI activity"
+  - wait: 48
+  - caption: "Each style has nine states, one per AI activity"
+  - wait: 48
+  - script: galaxy.mjs
+  - expect: { screen: page, selector: 'button[title="Galaxy"][aria-pressed="true"]' }
+  - caption: "Style: Galaxy"
+  - wait: 48
+  - caption: "Style: Galaxy"
+  - wait: 48
+  - caption: "Style: Galaxy"
+  - wait: 48
+  - caption: "Style: Galaxy"
+  - wait: 48
+  - caption: "Style: Galaxy"
+  - wait: 48
+  - caption: "Style: Galaxy"
+  - wait: 48
+  - caption: "Style: Galaxy"
+  - wait: 48
+  - caption: "Style: Galaxy"
+  - wait: 48
+  - caption: "Style: Galaxy"
+  - wait: 48
+  - caption: "Style: Galaxy"
+  - wait: 48
+  - caption: "Style: Galaxy"
+  - wait: 48
+  - caption: "Style: Galaxy"
+  - wait: 48
+  - caption: "Style: Galaxy"
+  - wait: 48
+  - caption: "Style: Galaxy"
+  - wait: 48
+  - caption: "Style: Galaxy"
+  - wait: 48
+  - caption: "Style: Galaxy"
+  - wait: 48
+  - caption: "Style: Galaxy"
+  - wait: 48
+  - caption: "Style: Galaxy"
+  - wait: 48
+  - caption: "Style: Galaxy"
+  - wait: 48
+  - caption: "Style: Galaxy"
+  - wait: 48
+  - caption: "Style: Galaxy"
+  - wait: 48
+  - caption: "Style: Galaxy"
+  - wait: 48
+  - script: knot.mjs
+  - expect: { screen: page, selector: 'button[title="Knot"][aria-pressed="true"]' }
+  - caption: "Style: Knot"
+  - wait: 48
+  - caption: "Style: Knot"
+  - wait: 48
+  - caption: "Style: Knot"
+  - wait: 48
+  - caption: "Style: Knot"
+  - wait: 48
+  - caption: "Style: Knot"
+  - wait: 48
+  - caption: "Style: Knot"
+  - wait: 48
+  - caption: "Style: Knot"
+  - wait: 48
+  - caption: "Style: Knot"
+  - wait: 48
+  - caption: "Style: Knot"
+  - wait: 48
+  - caption: "Style: Knot"
+  - wait: 48
+  - caption: "Style: Knot"
+  - wait: 48
+  - caption: "Style: Knot"
+  - wait: 48
+  - caption: "Style: Knot"
+  - wait: 48
+  - caption: "Style: Knot"
+  - wait: 48
+  - caption: "Style: Knot"
+  - wait: 48
+  - caption: "Style: Knot"
+  - wait: 48
+  - caption: "Style: Knot"
+  - wait: 48
+  - caption: "Style: Knot"
+  - wait: 48
+  - caption: "Style: Knot"
+  - wait: 48
+  - caption: "Style: Knot"
+  - wait: 48
+  - caption: "Style: Knot"
+  - wait: 48
+  - caption: "Style: Knot"
+  - wait: 48
+  - script: flame.mjs
+  - expect: { screen: page, selector: 'button[title="Flame"][aria-pressed="true"]' }
+  - caption: "Style: Flame"
+  - wait: 48
+  - caption: "Style: Flame"
+  - wait: 48
+  - caption: "Style: Flame"
+  - wait: 48
+  - caption: "Style: Flame"
+  - wait: 48
+  - caption: "Style: Flame"
+  - wait: 48
+  - caption: "Style: Flame"
+  - wait: 48
+  - caption: "Style: Flame"
+  - wait: 48
+  - caption: "Style: Flame"
+  - wait: 48
+  - caption: "Style: Flame"
+  - wait: 48
+  - caption: "Style: Flame"
+  - wait: 48
+  - caption: "Style: Flame"
+  - wait: 48
+  - caption: "Style: Flame"
+  - wait: 48
+  - caption: "Style: Flame"
+  - wait: 48
+  - caption: "Style: Flame"
+  - wait: 48
+  - caption: "Style: Flame"
+  - wait: 48
+  - caption: "Style: Flame"
+  - wait: 48
+  - caption: "Style: Flame"
+  - wait: 48
+  - caption: "Style: Flame"
+  - wait: 48
+  - caption: "Style: Flame"
+  - wait: 48
+  - caption: "Style: Flame"
+  - wait: 48
+  - caption: "Style: Flame"
+  - wait: 48
+  - caption: "Style: Flame"
+  - wait: 48
+  - script: jelly.mjs
+  - expect: { screen: page, selector: 'button[title="Jelly"][aria-pressed="true"]' }
+  - caption: "Style: Jelly"
+  - wait: 48
+  - caption: "Style: Jelly"
+  - wait: 48
+  - caption: "Style: Jelly"
+  - wait: 48
+  - caption: "Style: Jelly"
+  - wait: 48
+  - caption: "Style: Jelly"
+  - wait: 48
+  - caption: "Style: Jelly"
+  - wait: 48
+  - caption: "Style: Jelly"
+  - wait: 48
+  - caption: "Style: Jelly"
+  - wait: 48
+  - caption: "Style: Jelly"
+  - wait: 48
+  - caption: "Style: Jelly"
+  - wait: 48
+  - caption: "Style: Jelly"
+  - wait: 48
+  - caption: "Style: Jelly"
+  - wait: 48
+  - caption: "Style: Jelly"
+  - wait: 48
+  - caption: "Style: Jelly"
+  - wait: 48
+  - caption: "Style: Jelly"
+  - wait: 48
+  - caption: "Style: Jelly"
+  - wait: 48
+  - caption: "Style: Jelly"
+  - wait: 48
+  - caption: "Style: Jelly"
+  - wait: 48
+  - caption: "Style: Jelly"
+  - wait: 48
+  - caption: "Style: Jelly"
+  - wait: 48
+  - caption: "Style: Jelly"
+  - wait: 48
+  - caption: "Style: Jelly"
+  - wait: 48
+  - script: usage.mjs
+  - wait: 900
+  - caption: "Copy the code for your pick"
+  - click: { screen: page, target: { text: "JavaScript" } }
+  - caption: "Copy the code for your pick"
+  - wait: 48
+  - caption: "Copy the code for your pick"
+  - wait: 48
+  - caption: "Copy the code for your pick"
+  - wait: 48
+  - caption: "Copy the code for your pick"
+  - wait: 48
+  - caption: "Copy the code for your pick"
+  - wait: 48
+  - caption: "Copy the code for your pick"
+  - wait: 48
+  - caption: "Copy the code for your pick"
+  - wait: 48
+  - caption: "Copy the code for your pick"
+  - wait: 48
+  - caption: "Copy the code for your pick"
+  - wait: 48
+  - caption: "Copy the code for your pick"
+  - wait: 48
+  - caption: "Copy the code for your pick"
+  - wait: 48
+  - caption: "Copy the code for your pick"
+  - wait: 48
+  - caption: "Copy the code for your pick"
+  - wait: 48
+  - caption: "Copy the code for your pick"
+  - wait: 48
+  - caption: "Copy the code for your pick"
+  - wait: 48
+  - caption: "Copy the code for your pick"
+  - wait: 48
+  - caption: "Copy the code for your pick"
+  - wait: 48
+  - caption: "Copy the code for your pick"
+  - wait: 48
+  - caption: "Copy the code for your pick"
+  - wait: 48
+  - caption: "Copy the code for your pick"
+  - wait: 48
+  - caption: "Copy the code for your pick"
+  - wait: 48
+  - caption: "Copy the code for your pick"
+  - wait: 48
