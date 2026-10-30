@@ -8,7 +8,7 @@ const sets = readdirSync(`${ROOT}/sets`)
   .filter((file) => file.endsWith('.ts'))
   .map((file) => file.replace(/\.ts$/, ''))
 
-// Each module stays its own file so `ai-spinner/sets/<name>` pulls in only that set and the shared helpers.
+// Each module stays its own file so `@x-mesh/ai-spinner/sets/<name>` pulls in only that set and the shared helpers.
 export default defineConfig({
   plugins: [react()],
   publicDir: false,

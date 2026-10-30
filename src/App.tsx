@@ -37,7 +37,7 @@ function App() {
           </p>
           <p className="links">
             <a href="https://github.com/x-mesh/ai-spinner">GitHub</a>
-            <a href="https://www.npmjs.com/package/ai-spinner">npm</a>
+            <a href="https://www.npmjs.com/package/@x-mesh/ai-spinner">npm</a>
           </p>
         </div>
       </header>

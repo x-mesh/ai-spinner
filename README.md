@@ -1,4 +1,4 @@
-# ai-spinner
+# @x-mesh/ai-spinner
 
 Animated canvas spinners that show what an AI assistant does while the user waits.
 The package has 68 style sets. Each set has nine states, such as `searching`, `solving` and `composing`.
@@ -12,14 +12,14 @@ See all sets and copy the code for your choice in the [gallery](https://x-mesh.g
 ## Install
 
 ```sh
-npm install ai-spinner
+npm install @x-mesh/ai-spinner
 ```
 
 ## Use with React
 
 ```tsx
-import { Spinner } from 'ai-spinner'
-import { bars } from 'ai-spinner/sets/bars'
+import { Spinner } from '@x-mesh/ai-spinner'
+import { bars } from '@x-mesh/ai-spinner/sets/bars'
 
 export function Reply() {
   return <Spinner set={bars} state="searching" size={32} />
@@ -35,7 +35,7 @@ The component file has the `'use client'` directive, so you can use it in React 
 | Prop | Type | Default | Description |
 |---|---|---|---|
 | `state` | `SpinnerState` | required | The activity to show. See [States](#states). |
-| `set` | `SpinnerSet` | `matrix` | The style set. Import it from `ai-spinner/sets/<name>`. |
+| `set` | `SpinnerSet` | `matrix` | The style set. Import it from `@x-mesh/ai-spinner/sets/<name>`. |
 | `size` | `number` | `64` | Width and height in CSS pixels. Below 32, each set uses a simpler compact design. |
 | `theme` | `'auto' \| 'light' \| 'dark'` | `'auto'` | `auto` uses the CSS `color` of the canvas. `light` and `dark` use a fixed ink. |
 | `speed` | `number` | `1` | Multiplies the animation speed. |
@@ -46,11 +46,11 @@ The component file has the `'use client'` directive, so you can use it in React 
 
 ## Use without React
 
-Import from `ai-spinner/vanilla`. This entry point does not import React.
+Import from `@x-mesh/ai-spinner/vanilla`. This entry point does not import React.
 
 ```ts
-import { mountSpinner } from 'ai-spinner/vanilla'
-import { knot } from 'ai-spinner/sets/knot'
+import { mountSpinner } from '@x-mesh/ai-spinner/vanilla'
+import { knot } from '@x-mesh/ai-spinner/sets/knot'
 
 const canvas = document.querySelector('canvas')!
 canvas.setAttribute('role', 'img')
@@ -87,14 +87,14 @@ Set the accessibility attributes on the canvas yourself.
 Import one set from its own path:
 
 ```ts
-import { galaxy } from 'ai-spinner/sets/galaxy'
+import { galaxy } from '@x-mesh/ai-spinner/sets/galaxy'
 ```
 
 To show all sets, for example in a settings screen, import `SPINNER_SETS`.
 This import adds all 68 sets to your bundle.
 
 ```ts
-import { SPINNER_SETS } from 'ai-spinner/sets'
+import { SPINNER_SETS } from '@x-mesh/ai-spinner/sets'
 ```
 
 The 68 sets are:

@@ -8,7 +8,7 @@ const FLAVORS: { id: Flavor; label: string }[] = [
   { id: 'vanilla', label: 'JavaScript' },
 ]
 const SIZES = [20, 32, 64]
-const INSTALL = 'npm install ai-spinner'
+const INSTALL = 'npm install @x-mesh/ai-spinner'
 
 interface Choice {
   set: SpinnerSet
@@ -29,8 +29,8 @@ function reactSnippet(choice: Choice) {
   if (theme) props.push(`theme="${theme}"`)
   if (speed) props.push(`speed={${speed}}`)
   return [
-    `import { Spinner } from 'ai-spinner'`,
-    `import { ${choice.set.id} } from 'ai-spinner/sets/${choice.set.id}'`,
+    `import { Spinner } from '@x-mesh/ai-spinner'`,
+    `import { ${choice.set.id} } from '@x-mesh/ai-spinner/sets/${choice.set.id}'`,
     '',
     `<Spinner ${props.join(' ')} />`,
   ].join('\n')
@@ -42,8 +42,8 @@ function vanillaSnippet(choice: Choice) {
   if (theme) options.push(`theme: '${theme}'`)
   if (speed) options.push(`speed: ${speed}`)
   return [
-    `import { mountSpinner } from 'ai-spinner/vanilla'`,
-    `import { ${choice.set.id} } from 'ai-spinner/sets/${choice.set.id}'`,
+    `import { mountSpinner } from '@x-mesh/ai-spinner/vanilla'`,
+    `import { ${choice.set.id} } from '@x-mesh/ai-spinner/sets/${choice.set.id}'`,
     '',
     `const canvas = document.querySelector('canvas')`,
     `const spinner = mountSpinner(canvas, { ${options.join(', ')} })`,

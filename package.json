@@ -1,5 +1,5 @@
 {
-  "name": "ai-spinner",
+  "name": "@x-mesh/ai-spinner",
   "version": "0.1.0",
   "description": "68 canvas spinner styles, each with nine states, for showing what an AI is doing while it thinks.",
   "keywords": [
