@@ -1,0 +1,400 @@
+.page {
+  max-width: 62rem;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.head h1 {
+  margin: 0;
+  font-size: 1.75rem;
+  letter-spacing: -0.02em;
+}
+
+.lede {
+  margin: 0.25rem 0 0;
+  color: var(--muted);
+  max-width: 44ch;
+}
+
+h2 {
+  margin: 0 0 1rem;
+  font-size: 1.0625rem;
+  letter-spacing: -0.01em;
+}
+
+.dim {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.hint {
+  margin: 0;
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+
+.hint.tight {
+  margin: -0.5rem 0 1rem;
+}
+
+/* Controls */
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.25rem;
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+}
+
+.control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.control-wide {
+  grid-column: 1 / -1;
+}
+
+.control-wide .segmented {
+  display: grid;
+  grid-template-columns: repeat(17, minmax(0, auto));
+}
+
+.control-wide .segmented button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  min-width: 0;
+  padding: 0.5rem 0.1rem 0.4rem;
+  font-size: 0.72rem;
+  letter-spacing: -0.01em;
+}
+
+/* Phones cannot fit 17 columns, so the picker scrolls inside its box instead of widening the page. */
+@media (max-width: 40rem) {
+  .control-wide .segmented {
+    grid-template-columns: repeat(17, 3.25rem);
+    overflow-x: auto;
+  }
+}
+
+.set-name {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.control-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.segmented {
+  display: inline-flex;
+  padding: 2px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface-2);
+}
+
+.segmented button {
+  flex: 1;
+  border: 0;
+  border-radius: 6px;
+  padding: 0.35rem 0.6rem;
+  font: inherit;
+  font-size: 0.8125rem;
+  color: var(--muted);
+  background: transparent;
+  cursor: pointer;
+}
+
+.segmented button[aria-pressed='true'] {
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.08);
+}
+
+.control input[type='range'] {
+  width: 100%;
+  accent-color: var(--ink);
+}
+
+.switch {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.switch input {
+  accent-color: var(--ink);
+}
+
+/* Gallery */
+
+.gallery,
+.inline-rows {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+  gap: 0.75rem;
+}
+
+.tile {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.5rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  text-align: center;
+}
+
+.tile:hover {
+  border-color: var(--border-strong);
+}
+
+.tile[aria-pressed='true'] {
+  border-color: var(--ink);
+}
+
+.tile-name {
+  font-family: var(--mono);
+  font-size: 0.8125rem;
+}
+
+.tile-blurb {
+  font-size: 0.75rem;
+  color: var(--muted);
+  text-wrap: balance;
+}
+
+/* Inline scale */
+
+.inline-rows {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.inline-rows li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  font-size: 0.9375rem;
+  color: var(--muted);
+}
+
+.inline-rows li:nth-child(odd) {
+  background: var(--surface);
+}
+
+.inline-rows strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Chat */
+
+.chat {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+}
+
+.bubble {
+  flex: 1;
+  min-width: 0;
+}
+
+.bubble-who {
+  margin: 0 0 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.bubble-body {
+  margin: 0;
+  text-wrap: pretty;
+}
+
+/* Footer */
+
+.foot {
+  border-top: 1px solid var(--border);
+  padding-top: 1.25rem;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.foot p {
+  margin: 0;
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+
+/* Header links */
+
+.links {
+  display: flex;
+  gap: 1rem;
+  margin: 0.5rem 0 0;
+  font-size: 0.875rem;
+}
+
+.links a {
+  color: var(--text);
+  text-underline-offset: 3px;
+}
+
+/* Usage */
+
+.usage {
+  display: grid;
+  grid-template-columns: minmax(11rem, 14rem) minmax(0, 1fr);
+  gap: 1.25rem;
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+}
+
+.usage-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.usage-stage {
+  display: grid;
+  place-items: center;
+  min-height: 7.5rem;
+  border-radius: 8px;
+  background: var(--surface-2);
+}
+
+.usage-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.usage-field select {
+  padding: 0.4rem 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font: inherit;
+  font-size: 0.875rem;
+  color: var(--text);
+  background: var(--surface);
+}
+
+.usage-code {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+.install,
+.usage-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.install {
+  padding: 0.5rem 0.5rem 0.5rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface-2);
+}
+
+.install code {
+  padding: 0;
+  font: 0.8125rem/1.4 var(--mono);
+  background: none;
+}
+
+.snippet {
+  margin: 0;
+  padding: 1rem;
+  overflow-x: auto;
+  border-radius: 8px;
+  background: var(--surface-2);
+  font-family: var(--mono);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+}
+
+.snippet code {
+  padding: 0;
+  font: inherit;
+  background: none;
+}
+
+.copy {
+  flex: none;
+  min-width: 6.5rem;
+  padding: 0.35rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font: inherit;
+  font-size: 0.8125rem;
+  color: var(--text);
+  background: var(--surface);
+  cursor: pointer;
+}
+
+.copy:hover {
+  border-color: var(--border-strong);
+}
+
+@media (max-width: 40rem) {
+  .usage {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
