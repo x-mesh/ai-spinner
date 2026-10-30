@@ -26,3 +26,6 @@ dist-ssr
 
 # reel-mesh frames and intermediate files
 .reel/
+
+# xm skill traces and local state
+.xm/
