@@ -33,7 +33,7 @@ function App() {
         <div>
           <h1>AI Spinner</h1>
           <p className="lede">
-            Sixty-eight style sets of nine canvas states that replace the spinner while an AI is thinking.
+            Seventy-two style sets of nine canvas states that replace the spinner while an AI is thinking.
           </p>
           <p className="links">
             <a href="https://github.com/x-mesh/ai-spinner">GitHub</a>

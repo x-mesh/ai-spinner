@@ -4,7 +4,7 @@
 [![license](https://img.shields.io/npm/l/@x-mesh/ai-spinner)](LICENSE)
 
 Animated canvas spinners that show what an AI assistant does while the user waits.
-The package has 68 style sets. Each set has nine states, such as `searching`, `solving` and `composing`.
+The package has 72 style sets. Each set has nine states, such as `searching`, `solving` and `composing`.
 
 ![The gallery switches between the Galaxy, Knot, Flame and Jelly styles, each in nine animated states, then shows the code for the selected style](https://raw.githubusercontent.com/x-mesh/ai-spinner/main/docs/media/gallery.gif)
 
@@ -96,17 +96,17 @@ import { galaxy } from '@x-mesh/ai-spinner/sets/galaxy'
 ```
 
 To show all sets, for example in a settings screen, import `SPINNER_SETS`.
-This import adds all 68 sets to your bundle.
+This import adds all 72 sets to your bundle.
 
 ```ts
 import { SPINNER_SETS } from '@x-mesh/ai-spinner/sets'
 ```
 
-The 68 sets are:
+The 72 sets are:
 `matrix`, `bars`, `dial`, `strokes`, `blob`, `quad`, `glyph`, `hive`, `halo`, `bounce`, `facet`, `eyes`, `sprout`, `tide`, `goo`, `pond`, `cards`,
 `mochi`, `ribbon`, `bloom`, `dust`, `flock`, `moire`, `tunnel`, `pendulum`, `spiro`, `worm`, `glitch`, `domino`, `ridge`, `halftone`, `coil`, `kaleido`, `wire`,
 `ferro`, `harp`, `comet`, `galaxy`, `knot`, `swirl`, `cells`, `drip`, `burst`, `truchet`, `iso`, `gyro`, `spark`, `jelly`, `fizz`, `cloth`, `globe`,
-`fold`, `sand`, `bokeh`, `smoke`, `field`, `chain`, `flame`, `aurora`, `twister`, `radar`, `pulse`, `plexus`, `marble`, `helix`, `aura`, `shatter`, `confetti`.
+`fold`, `sand`, `bokeh`, `smoke`, `field`, `chain`, `flame`, `aurora`, `twister`, `radar`, `pulse`, `plexus`, `marble`, `helix`, `aura`, `shatter`, `confetti`, `dash`, `ricochet`, `stamp`, `rev`.
 
 Each set has `id`, `label`, a `blurbs` text for each state, and an `icon` frame (`{ state, t }`).
 To show a still preview of a set, use `icon` with `paused` and `startAt`:
