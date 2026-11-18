@@ -5,6 +5,16 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-11-19
+
+### Added
+
+- Four spinner sets with sharp changes in speed, each with all nine states: `dash`, `ricochet`, `stamp` and `rev`. `dash` winds up, darts and overshoots. `ricochet` bounces wall to wall. `stamp` lifts slowly and slams down. `rev` spins up into a motion blur and brakes hard.
+
+### Changed
+
+- The package now has 72 style sets. The gallery picker uses 18 columns, so the sets fill four rows.
+
 ## [0.1.1] - 2026-10-30
 
 ### Added
@@ -25,6 +35,7 @@ First release.
 - A compact design for each set below 32 px, `theme` that follows the page color, and a still frame under `prefers-reduced-motion`.
 - The gallery page at https://x-mesh.github.io/ai-spinner/, with code for the selected set and state.
 
-[Unreleased]: https://github.com/x-mesh/ai-spinner/compare/v0.1.1...HEAD
+[Unreleased]: https://github.com/x-mesh/ai-spinner/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/x-mesh/ai-spinner/releases/tag/v0.2.0
 [0.1.1]: https://github.com/x-mesh/ai-spinner/releases/tag/v0.1.1
 [0.1.0]: https://www.npmjs.com/package/@x-mesh/ai-spinner/v/0.1.0
