@@ -14,49 +14,49 @@ timing:
   frameMs: 52
 steps:
   - expect: { screen: page, selector: 'button[title="Matrix"][aria-pressed="true"]' }
-  - caption: "68 spinner styles for AI apps"
+  - caption: "72 spinner styles for AI apps"
   - wait: 48
-  - caption: "68 spinner styles for AI apps"
+  - caption: "72 spinner styles for AI apps"
   - wait: 48
-  - caption: "68 spinner styles for AI apps"
+  - caption: "72 spinner styles for AI apps"
   - wait: 48
-  - caption: "68 spinner styles for AI apps"
+  - caption: "72 spinner styles for AI apps"
   - wait: 48
-  - caption: "68 spinner styles for AI apps"
+  - caption: "72 spinner styles for AI apps"
   - wait: 48
-  - caption: "68 spinner styles for AI apps"
+  - caption: "72 spinner styles for AI apps"
   - wait: 48
-  - caption: "68 spinner styles for AI apps"
+  - caption: "72 spinner styles for AI apps"
   - wait: 48
-  - caption: "68 spinner styles for AI apps"
+  - caption: "72 spinner styles for AI apps"
   - wait: 48
-  - caption: "68 spinner styles for AI apps"
+  - caption: "72 spinner styles for AI apps"
   - wait: 48
-  - caption: "68 spinner styles for AI apps"
+  - caption: "72 spinner styles for AI apps"
   - wait: 48
-  - caption: "68 spinner styles for AI apps"
+  - caption: "72 spinner styles for AI apps"
   - wait: 48
-  - caption: "68 spinner styles for AI apps"
+  - caption: "72 spinner styles for AI apps"
   - wait: 48
-  - caption: "68 spinner styles for AI apps"
+  - caption: "72 spinner styles for AI apps"
   - wait: 48
-  - caption: "68 spinner styles for AI apps"
+  - caption: "72 spinner styles for AI apps"
   - wait: 48
-  - caption: "68 spinner styles for AI apps"
+  - caption: "72 spinner styles for AI apps"
   - wait: 48
-  - caption: "68 spinner styles for AI apps"
+  - caption: "72 spinner styles for AI apps"
   - wait: 48
-  - caption: "68 spinner styles for AI apps"
+  - caption: "72 spinner styles for AI apps"
   - wait: 48
-  - caption: "68 spinner styles for AI apps"
+  - caption: "72 spinner styles for AI apps"
   - wait: 48
-  - caption: "68 spinner styles for AI apps"
+  - caption: "72 spinner styles for AI apps"
   - wait: 48
-  - caption: "68 spinner styles for AI apps"
+  - caption: "72 spinner styles for AI apps"
   - wait: 48
-  - caption: "68 spinner styles for AI apps"
+  - caption: "72 spinner styles for AI apps"
   - wait: 48
-  - caption: "68 spinner styles for AI apps"
+  - caption: "72 spinner styles for AI apps"
   - wait: 48
   - script: gallery.mjs
   - caption: "Each style has nine states, one per AI activity"
