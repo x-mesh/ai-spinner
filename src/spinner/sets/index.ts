@@ -13,6 +13,7 @@ import { cloth } from './cloth.js'
 import { coil } from './coil.js'
 import { comet } from './comet.js'
 import { confetti } from './confetti.js'
+import { dash } from './dash.js'
 import { dial } from './dial.js'
 import { domino } from './domino.js'
 import { drip } from './drip.js'
@@ -50,7 +51,9 @@ import { pond } from './pond.js'
 import { pulse } from './pulse.js'
 import { quad } from './quad.js'
 import { radar } from './radar.js'
+import { rev } from './rev.js'
 import { ribbon } from './ribbon.js'
+import { ricochet } from './ricochet.js'
 import { ridge } from './ridge.js'
 import { sand } from './sand.js'
 import { shatter } from './shatter.js'
@@ -58,6 +61,7 @@ import { smoke } from './smoke.js'
 import { spark } from './spark.js'
 import { spiro } from './spiro.js'
 import { sprout } from './sprout.js'
+import { stamp } from './stamp.js'
 import { strokes } from './strokes.js'
 import { swirl } from './swirl.js'
 import { tide } from './tide.js'
@@ -83,6 +87,7 @@ export {
   coil,
   comet,
   confetti,
+  dash,
   dial,
   domino,
   drip,
@@ -120,7 +125,9 @@ export {
   pulse,
   quad,
   radar,
+  rev,
   ribbon,
+  ricochet,
   ridge,
   sand,
   shatter,
@@ -128,6 +135,7 @@ export {
   spark,
   spiro,
   sprout,
+  stamp,
   strokes,
   swirl,
   tide,
@@ -207,4 +215,8 @@ export const SPINNER_SETS = [
   aura,
   shatter,
   confetti,
+  dash,
+  ricochet,
+  stamp,
+  rev,
 ]
